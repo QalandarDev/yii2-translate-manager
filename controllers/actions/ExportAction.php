@@ -1,13 +1,13 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use Yii;
 use yii\web\JsonResponseFormatter;
 use yii\web\Response;
 use yii\web\XmlResponseFormatter;
-use lajax\translatemanager\Module;
-use lajax\translatemanager\models\ExportForm;
+use hsoft\translatemanager\Module;
+use hsoft\translatemanager\models\ExportForm;
 
 /**
  * Class for exporting translations.

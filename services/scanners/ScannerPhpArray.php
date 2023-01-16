@@ -1,9 +1,9 @@
 <?php
 
-namespace lajax\translatemanager\services\scanners;
+namespace hsoft\translatemanager\services\scanners;
 
 use yii\helpers\Console;
-use lajax\translatemanager\services\Scanner;
+use hsoft\translatemanager\services\Scanner;
 
 /**
  * Class for processing PHP files.
@@ -28,16 +28,16 @@ use lajax\translatemanager\services\Scanner;
  * Translation to site language:
  *
  * ~~~
- * $genders = \lajax\translatemanager\helpers\Language::a($this->_GENDERS);
+ * $genders = \hsoft\translatemanager\helpers\Language::a($this->_GENDERS);
  * ~~~
  *
  * Translating to the language of your coice:
  *
  * ~~~
- * $statuses = \lajax\translatemanager\helpers\Language::a($this->_STATUSES, [], 'de-DE');
+ * $statuses = \hsoft\translatemanager\helpers\Language::a($this->_STATUSES, [], 'de-DE');
  * ~~~
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

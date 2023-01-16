@@ -1,16 +1,16 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use Yii;
-use lajax\translatemanager\models\searches\LanguageSearch;
-use lajax\translatemanager\bundles\LanguageAsset;
-use lajax\translatemanager\bundles\LanguagePluginAsset;
+use hsoft\translatemanager\models\searches\LanguageSearch;
+use hsoft\translatemanager\bundles\LanguageAsset;
+use hsoft\translatemanager\bundles\LanguagePluginAsset;
 
 /**
  * Class that creates a list of languages.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

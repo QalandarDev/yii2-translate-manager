@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use lajax\translatemanager\bundles\TranslateManagerAsset;
+use hsoft\translatemanager\bundles\TranslateManagerAsset;
 
 /*
  * @var \yii\web\View $this
@@ -31,7 +31,7 @@ TranslateManagerAsset::register($this);
         <div class="wrap">
             <?php
             NavBar::begin([
-                'brandLabel' => 'Lajax TranslateManager',
+                'brandLabel' => 'hsoft TranslateManager',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -74,7 +74,7 @@ TranslateManagerAsset::register($this);
 
         <footer class="footer">
             <div class="container">
-                <p class="pull-left">&copy; Lajax TranslateManager <?= date('Y') ?></p>
+                <p class="pull-left">&copy; hsoft TranslateManager <?= date('Y') ?></p>
                 <p class="pull-right"><?= Yii::powered() ?></p>
             </div>
         </footer>

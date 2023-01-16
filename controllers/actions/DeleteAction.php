@@ -1,11 +1,11 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 /**
  * Deletes an existing Language model.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.3
  */

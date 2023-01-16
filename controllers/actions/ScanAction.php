@@ -1,16 +1,16 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use yii\data\ArrayDataProvider;
-use lajax\translatemanager\services\Scanner;
-use lajax\translatemanager\models\LanguageSource;
-use lajax\translatemanager\bundles\ScanPluginAsset;
+use hsoft\translatemanager\services\Scanner;
+use hsoft\translatemanager\models\LanguageSource;
+use hsoft\translatemanager\bundles\ScanPluginAsset;
 
 /**
  * Class for detecting language elements.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

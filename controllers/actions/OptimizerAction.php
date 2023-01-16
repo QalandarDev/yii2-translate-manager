@@ -1,13 +1,13 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
-use lajax\translatemanager\services\Optimizer;
+use hsoft\translatemanager\services\Optimizer;
 
 /**
  * Class for optimizing language database.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

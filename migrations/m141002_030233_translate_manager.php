@@ -4,7 +4,7 @@ use yii\db\Schema;
 use yii\db\Migration;
 
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

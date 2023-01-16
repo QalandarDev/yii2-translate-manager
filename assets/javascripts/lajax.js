@@ -1,13 +1,13 @@
 /**
  * Created on : 2014.08.24., 5:26:26
- * Author     : Lajos Molnar <lajax.m@gmail.com>
+ * Author     : Lajos Molnar <hsoft.m@gmail.com>
  * since 1.0
  */
 
 /**
  * This module facilitates client-side multilingual support.
  */
-var lajax = (function () {
+var hsoft = (function () {
 
     return {
         /**
@@ -17,9 +17,9 @@ var lajax = (function () {
          * examples:
          *
          * ~~~
-         * alert(lajax.t('Hello!'));
-         * alert(lajax.t('Hello {name}'), {name:'World!'});
-         * alert(lajax.t('Hello {first_name} {last_name}', {fist_name: 'Veronica', last_name:'Hunter'}));
+         * alert(hsoft.t('Hello!'));
+         * alert(hsoft.t('Hello {name}'), {name:'World!'});
+         * alert(hsoft.t('Hello {first_name} {last_name}', {fist_name: 'Veronica', last_name:'Hunter'}));
          * ~~~
          *
          * @param {string} message The message to translate.

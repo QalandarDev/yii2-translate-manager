@@ -2,7 +2,7 @@
 
 Contributions are welcome.
 
-We accept contributions via Pull Requests on [Github](https://github.com/lajax/yii2-translate-manager).
+We accept contributions via Pull Requests on [Github](https://github.com/hsoft/yii2-translate-manager).
 
 
 ## Pull Requests

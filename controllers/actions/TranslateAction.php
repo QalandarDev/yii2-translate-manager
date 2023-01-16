@@ -1,16 +1,16 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use Yii;
-use lajax\translatemanager\bundles\TranslateAsset;
-use lajax\translatemanager\bundles\TranslatePluginAsset;
-use lajax\translatemanager\models\searches\LanguageSourceSearch;
+use hsoft\translatemanager\bundles\TranslateAsset;
+use hsoft\translatemanager\bundles\TranslatePluginAsset;
+use hsoft\translatemanager\models\searches\LanguageSourceSearch;
 
 /**
  * This class facilitates the listing of language elements to be translated.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

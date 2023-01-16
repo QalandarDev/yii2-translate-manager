@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
 
-namespace lajax\translatemanager\models;
+namespace hsoft\translatemanager\models;
 
 use Yii;
 
@@ -54,8 +54,8 @@ class LanguageTranslate extends \yii\db\ActiveRecord
         return [
             [['id', 'language'], 'required'],
             [['id'], 'integer'],
-            [['id'], 'exist', 'targetClass' => '\lajax\translatemanager\models\LanguageSource'],
-            [['language'], 'exist', 'targetClass' => '\lajax\translatemanager\models\Language', 'targetAttribute' => 'language_id'],
+            [['id'], 'exist', 'targetClass' => '\hsoft\translatemanager\models\LanguageSource'],
+            [['language'], 'exist', 'targetClass' => '\hsoft\translatemanager\models\Language', 'targetAttribute' => 'language_id'],
             [['translation'], 'string'],
             [['language'], 'string', 'max' => 5],
         ];

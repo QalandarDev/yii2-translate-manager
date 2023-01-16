@@ -1,6 +1,6 @@
 /** 
  * Created on : 2014.12.04., 16:58:40
- * Author     : Lajos Molnar <lajax.m@gmail.com>
+ * Author     : Lajos Molnar <hsoft.m@gmail.com>
  * since 1.2
  */
 
@@ -19,12 +19,12 @@ var FrontendTranslation = {
         this.params = $language_item.data('params');
         $('#translate-manager-div').dialog({
             modal: true,
-            title: lajax.t('Translation Language: {name}', {name: $language_item.data('language_id')}),
+            title: hsoft.t('Translation Language: {name}', {name: $language_item.data('language_id')}),
             minWidth: 500,
             minHeight: 200,
             buttons: [
                 {
-                    text: lajax.t('Save'),
+                    text: hsoft.t('Save'),
                     click: $.proxy(
                             function () {
                             var $form = $('#transslate-manager-translation-form');
@@ -35,7 +35,7 @@ var FrontendTranslation = {
                                     dataType: 'json',
                                     success: $.proxy(function(errors) {
                                         if (errors.length === 0) {
-                                            $('span[data-hash=' + $language_item.data('hash') + ']').html(lajax.t($.trim($form.find('textarea').val()), this.params));
+                                            $('span[data-hash=' + $language_item.data('hash') + ']').html(hsoft.t($.trim($form.find('textarea').val()), this.params));
                                             $('#translate-manager-div').dialog('close');
                                         } else {
                                             helpers.showErrorMessages(errors, '#languagetranslate-');
@@ -47,7 +47,7 @@ var FrontendTranslation = {
                         }, this)
                 },
                 {
-                    text: lajax.t('Close'),
+                    text: hsoft.t('Close'),
                     click: function () {
                         $(this).dialog('close');
                     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace lajax\translatemanager\models;
+namespace hsoft\translatemanager\models;
 
 use Yii;
 use yii\base\Exception;

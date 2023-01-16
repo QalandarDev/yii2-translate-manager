@@ -1,15 +1,15 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use Yii;
-use lajax\translatemanager\models\LanguageSource;
-use lajax\translatemanager\models\LanguageTranslate;
+use hsoft\translatemanager\models\LanguageSource;
+use hsoft\translatemanager\models\LanguageTranslate;
 
 /**
  * Class for returning messages in the given language
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.2
  */

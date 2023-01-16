@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
 
-namespace lajax\translatemanager\models;
+namespace hsoft\translatemanager\models;
 
 use Yii;
 

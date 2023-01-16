@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.3
  */
@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model lajax\translatemanager\models\Language */
+/* @var $model hsoft\translatemanager\models\Language */
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('language', 'Languages'), 'url' => ['list']];

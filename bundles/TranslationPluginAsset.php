@@ -1,13 +1,13 @@
 <?php
 
-namespace lajax\translatemanager\bundles;
+namespace hsoft\translatemanager\bundles;
 
 use yii\web\AssetBundle;
 
 /**
- * Contains javascript files necessary for translating javascript messages on the client side (`lajax.t()` calls).
+ * Contains javascript files necessary for translating javascript messages on the client side (`hsoft.t()` calls).
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
@@ -16,20 +16,20 @@ class TranslationPluginAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@lajax/translatemanager/assets';
+    public $sourcePath = '@hsoft/translatemanager/assets';
 
     /**
      * @inheritdoc
      */
     public $js = [
         'javascripts/md5.js',
-        'javascripts/lajax.js',
+        'javascripts/hsoft.js',
     ];
 
     /**
      * @inheritdoc
      */
     public $depends = [
-        'lajax\translatemanager\bundles\LanguageItemPluginAsset',
+        'hsoft\translatemanager\bundles\LanguageItemPluginAsset',
     ];
 }

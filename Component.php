@@ -1,6 +1,6 @@
 <?php
 
-namespace lajax\translatemanager;
+namespace hsoft\translatemanager;
 
 use Yii;
 
@@ -14,12 +14,12 @@ use Yii;
  * 'bootstrap' => ['translatemanager'],
  * 'component' => [
  *      'translatemanager' => [
- *          'class' => 'lajax\translatemanager\Component'
+ *          'class' => 'hsoft\translatemanager\Component'
  *      ]
  * ]
  * ~~~
  *
- * @author Lajos Molnar <lajax.m@gmail.com>
+ * @author Lajos Molnar <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

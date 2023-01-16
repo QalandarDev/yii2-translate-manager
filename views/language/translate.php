@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
@@ -9,13 +9,13 @@ use yii\helpers\Html;
 use yii\widgets\Pjax;
 use yii\grid\GridView;
 use yii\widgets\ActiveForm;
-use lajax\translatemanager\helpers\Language;
-use lajax\translatemanager\models\Language as Lang;
+use hsoft\translatemanager\helpers\Language;
+use hsoft\translatemanager\models\Language as Lang;
 
 /* @var $this \yii\web\View */
 /* @var $language_id string */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-/* @var $searchModel lajax\translatemanager\models\searches\LanguageSourceSearch */
+/* @var $searchModel hsoft\translatemanager\models\searches\LanguageSourceSearch */
 /* @var $searchEmptyCommand string */
 
 $this->title = Yii::t('language', 'Translation into {language_id}', ['language_id' => $language_id]);

@@ -1,14 +1,14 @@
 <?php
 
-namespace lajax\translatemanager\services;
+namespace hsoft\translatemanager\services;
 
 use yii\helpers\Console;
-use lajax\translatemanager\models\LanguageSource;
+use hsoft\translatemanager\models\LanguageSource;
 
 /**
  * Optimizer class for optimizing database tables
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

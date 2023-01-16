@@ -27,7 +27,7 @@ Please read and follow the instructions in the [Contributing guide](CONTRIBUTING
 Via [Composer](http://getcomposer.org/download/)
 
 ```
-composer require lajax/yii2-translate-manager
+composer require hsoft/yii2-translate-manager
 ```
 
 ### Migration
@@ -35,7 +35,7 @@ composer require lajax/yii2-translate-manager
 Run the following command in Terminal for database migration:
 
 ```
-yii migrate/up --migrationPath=@vendor/lajax/yii2-translate-manager/migrations
+yii migrate/up --migrationPath=@vendor/hsoft/yii2-translate-manager/migrations
 ```
 
 Or use the [namespaced migration](http://www.yiiframework.com/doc-2.0/guide-db-migrations.html#namespaced-migrations) (requires at least Yii 2.0.10):
@@ -46,7 +46,7 @@ Or use the [namespaced migration](http://www.yiiframework.com/doc-2.0/guide-db-m
     'migrate' => [
         'class' => 'yii\console\controllers\MigrateController',
         'migrationNamespaces' => [
-            'lajax\translatemanager\migrations\namespaced',
+            'hsoft\translatemanager\migrations\namespaced',
         ],
     ],
 ],
@@ -89,7 +89,7 @@ Simple example:
 ```php
 'modules' => [
     'translatemanager' => [
-        'class' => 'lajax\translatemanager\Module',
+        'class' => 'hsoft\translatemanager\Module',
     ],
 ],
 ```
@@ -98,7 +98,7 @@ A more complex example including database table with multilingual support is bel
 ```php
 'modules' => [
     'translatemanager' => [
-        'class' => 'lajax\translatemanager\Module',
+        'class' => 'hsoft\translatemanager\Module',
         'root' => '@app',               // The root directory of the project scan.
         'scanRootParentDirectory' => true, // Whether scan the defined `root` parent directory, or the folder itself.
                                            // IMPORTANT: for detailed instructions read the chapter about root configuration.
@@ -108,7 +108,7 @@ A more complex example including database table with multilingual support is bel
         'tmpDir' => '@runtime',         // Writable directory for the client-side temporary language files.
                                         // IMPORTANT: must be identical for all applications (the AssetsManager serves the JavaScript files containing language elements from this directory).
         'phpTranslators' => ['::t'],    // list of the php function for translating messages.
-        'jsTranslators' => ['lajax.t'], // list of the js function for translating messages.
+        'jsTranslators' => ['hsoft.t'], // list of the js function for translating messages.
         'patterns' => ['*.js', '*.php'],// list of file extensions that contain language elements.
         'ignoredCategories' => ['yii'], // these categories won't be included in the language database.
         'onlyCategories' => ['yii'],    // only these categories will be included in the language database (cannot be used together with "ignoredCategories").
@@ -126,10 +126,10 @@ A more complex example including database table with multilingual support is bel
             ]
         ],
         'scanners' => [ // define this if you need to override default scanners (below)
-            '\lajax\translatemanager\services\scanners\ScannerPhpFunction',
-            '\lajax\translatemanager\services\scanners\ScannerPhpArray',
-            '\lajax\translatemanager\services\scanners\ScannerJavaScriptFunction',
-            '\lajax\translatemanager\services\scanners\ScannerDatabase',
+            '\hsoft\translatemanager\services\scanners\ScannerPhpFunction',
+            '\hsoft\translatemanager\services\scanners\ScannerPhpArray',
+            '\hsoft\translatemanager\services\scanners\ScannerJavaScriptFunction',
+            '\hsoft\translatemanager\services\scanners\ScannerDatabase',
         ],
     ],
 ],
@@ -220,7 +220,7 @@ DbManager:
 'bootstrap' => ['translatemanager'],
 'components' => [
     'translatemanager' => [
-        'class' => 'lajax\translatemanager\Component'
+        'class' => 'hsoft\translatemanager\Component'
     ]
 ]
 ```
@@ -234,14 +234,14 @@ To translate static messages in JavaScript files it is necessary to register the
 To register your scripts, call the following method in each action:
 
 ```php
-\lajax\translatemanager\helpers\Language::registerAssets();
+\hsoft\translatemanager\helpers\Language::registerAssets();
 ```
 
 A simple example for calling the above method at each page load:
 ```php
 namespace common\controllers;
 
-use lajax\translatemanager\helpers\Language;
+use hsoft\translatemanager\helpers\Language;
 
 // IMPORTANT: all Controllers must originate from this Controller!
 class Controller extends \yii\web\Controller {
@@ -259,17 +259,17 @@ Simple example for displaying a button to switch to front end translation mode.
 (The button will only appear for users who have the necessary privileges for translating!)
 
 ```php
-\lajax\translatemanager\widgets\ToggleTranslate::widget();
+\hsoft\translatemanager\widgets\ToggleTranslate::widget();
 ```
 
 A more complex example for displaying the button:
 
 ```php
-\lajax\translatemanager\widgets\ToggleTranslate::widget([
- 'position' => \lajax\translatemanager\widgets\ToggleTranslate::POSITION_TOP_RIGHT,
+\hsoft\translatemanager\widgets\ToggleTranslate::widget([
+ 'position' => \hsoft\translatemanager\widgets\ToggleTranslate::POSITION_TOP_RIGHT,
  'template' => '<a href="javascript:void(0);" id="toggle-translate" class="{position}" data-language="{language}" data-url="{url}"><i></i> {text}</a><div id="translate-manager-div"></div>',
- 'frontendTranslationAsset' => 'lajax\translatemanager\bundles\FrontendTranslationAsset',
- 'frontendTranslationPluginAsset' => 'lajax\translatemanager\bundles\FrontendTranslationPluginAsset',
+ 'frontendTranslationAsset' => 'hsoft\translatemanager\bundles\FrontendTranslationAsset',
+ 'frontendTranslationPluginAsset' => 'hsoft\translatemanager\bundles\FrontendTranslationPluginAsset',
 ]);
 ```
 
@@ -278,9 +278,9 @@ A more complex example for displaying the button:
 JavaScript:
 
 ```php
-lajax.t('Apple');
-lajax.t('Hello {name}!', {name:'World'});
-lajax.t("Don't be so upset.");
+hsoft.t('Apple');
+hsoft.t('Hello {name}!', {name:'World'});
+hsoft.t("Don't be so upset.");
 ```
 
 PHP methods:
@@ -294,14 +294,14 @@ Yii::t('category', "Don't be so upset.");
 PHP functions for front end translation:
 
 ```php
-use lajax\translatemanager\helpers\Language as Lx;
+use hsoft\translatemanager\helpers\Language as Lx;
 
 Lx::t('category', 'Apple');
 Lx::t('category', 'Hello {name}!', ['name' => 'World']);
 Lx::t('category', "Don't be so upset.");
 ```
 
-**IMPORTANT: The lajax\translatemanager\helpers\Language::t() (Lx::t()) function currently does not support the translation of HTMLattributes**
+**IMPORTANT: The hsoft\translatemanager\helpers\Language::t() (Lx::t()) function currently does not support the translation of HTMLattributes**
 
 PHP arrays:
 
@@ -320,7 +320,7 @@ private $_STATUSES = [
  * return array
  */
 public function getStatuses() {
-    return \lajax\translatemanager\helpers\Language::a($this->_STATUSES);
+    return \hsoft\translatemanager\helpers\Language::a($this->_STATUSES);
 }
 
 /**
@@ -333,7 +333,7 @@ private $_GENDERS = ['Male', 'Female'];
  * return array
  */
 public function getGenders() {
-    return \lajax\translatemanager\helpers\Language::a($this->_GENDERS, 'de-DE');
+    return \hsoft\translatemanager\helpers\Language::a($this->_GENDERS, 'de-DE');
 }
 ```
 
@@ -344,7 +344,7 @@ PHP Database:
 ```php
 namespace common\models;
 
-use lajax\translatemanager\helpers\Language;
+use hsoft\translatemanager\helpers\Language;
 
 /**
  * This is the model class for table "category".
@@ -451,13 +451,13 @@ class Category extends \yii\db\ActiveRecord {
     {
         return [
             [
-                'class' => \lajax\translatemanager\behaviors\TranslateBehavior::className(),
+                'class' => \hsoft\translatemanager\behaviors\TranslateBehavior::className(),
                 'translateAttributes' => ['name', 'description'],
             ],
 
             // or If the category is the database table name.
             // [
-            //     'class' => \lajax\translatemanager\behaviors\TranslateBehavior::className(),
+            //     'class' => \hsoft\translatemanager\behaviors\TranslateBehavior::className(),
             //     'translateAttributes' => ['name', 'description'],
             //     'category' => static::tableName(),
             // ],
@@ -502,7 +502,7 @@ Register the command
 
 ```php
 'controllerMap' => [
-    'translate' => \lajax\translatemanager\commands\TranslatemanagerController::className()
+    'translate' => \hsoft\translatemanager\commands\TranslatemanagerController::className()
 ],
 ```
 
@@ -515,10 +515,10 @@ Use it with the Yii CLI
 
 ## Known issues
 
-* Scanner is scanning parent root directory [#12](https://github.com/lajax/yii2-translate-manager/pull/12).
+* Scanner is scanning parent root directory [#12](https://github.com/hsoft/yii2-translate-manager/pull/12).
 
   You can overwrite this behavior with the `scanRootParentDirectory` option. (See Config section for details.)
-* Frontend translation of strings in hidden tags corrupts HTML. [#45](https://github.com/lajax/yii2-translate-manager/issues/45)
+* Frontend translation of strings in hidden tags corrupts HTML. [#45](https://github.com/hsoft/yii2-translate-manager/issues/45)
 
 ## Coding style
 
@@ -547,39 +547,39 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 ## Screenshots
 
 ### List of languages
-![translate-manager-0 2-screen-1](https://res.cloudinary.com/lajax/image/upload/v1421343987/admin-languages_ikxjqz.png)
+![translate-manager-0 2-screen-1](https://res.cloudinary.com/hsoft/image/upload/v1421343987/admin-languages_ikxjqz.png)
 
 
 ### Scanning project
-![translate-manager-0 2-screen-2](https://res.cloudinary.com/lajax/image/upload/v1424605567/admin-scan-2_lig4wn.png)
+![translate-manager-0 2-screen-2](https://res.cloudinary.com/hsoft/image/upload/v1424605567/admin-scan-2_lig4wn.png)
 
 
 ### Optimise database
-![translate-manager-0 2-screen-3](https://res.cloudinary.com/lajax/image/upload/v1424606158/admin-optimise-2_nf6u3t.png)
+![translate-manager-0 2-screen-3](https://res.cloudinary.com/hsoft/image/upload/v1424606158/admin-optimise-2_nf6u3t.png)
 
 
 ### Translate on the admin interface
-![translate-manager-0 2-screen-4](https://res.cloudinary.com/lajax/image/upload/v1421382395/admin-translation_p9uavl.png)
+![translate-manager-0 2-screen-4](https://res.cloudinary.com/hsoft/image/upload/v1421382395/admin-translation_p9uavl.png)
 
 
 ### Front end in translating mode
-![translate-manager-0 2-screen-6](https://res.cloudinary.com/lajax/image/upload/v1421343986/frontend-translation-toggle_fsqflh.png)
+![translate-manager-0 2-screen-6](https://res.cloudinary.com/hsoft/image/upload/v1421343986/frontend-translation-toggle_fsqflh.png)
 
 
 ### Translate on the front end
-![translate-manager-0 2-screen-7](https://res.cloudinary.com/lajax/image/upload/v1421343987/frontend-translation-dialog_jivgkh.png)
+![translate-manager-0 2-screen-7](https://res.cloudinary.com/hsoft/image/upload/v1421343987/frontend-translation-dialog_jivgkh.png)
 
 
 ## Links
 
-- [GitHub](https://github.com/lajax/yii2-translate-manager)
-- [Api Docs](http://lajax.github.io/yii2-translate-manager)
+- [GitHub](https://github.com/hsoft/yii2-translate-manager)
+- [Api Docs](http://hsoft.github.io/yii2-translate-manager)
 - [Packagist][link-packagist]
 - [Yii Extensions](http://www.yiiframework.com/extension/yii2-translate-manager)
 
-[ico-version]: https://img.shields.io/packagist/v/lajax/yii2-translate-manager.svg?style=flat
+[ico-version]: https://img.shields.io/packagist/v/hsoft/yii2-translate-manager.svg?style=flat
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat
-[ico-downloads]: https://img.shields.io/packagist/dt/lajax/yii2-translate-manager.svg?style=flat
+[ico-downloads]: https://img.shields.io/packagist/dt/hsoft/yii2-translate-manager.svg?style=flat
 
-[link-packagist]: https://packagist.org/packages/lajax/yii2-translate-manager
-[link-downloads]: https://packagist.org/packages/lajax/yii2-translate-manager
+[link-packagist]: https://packagist.org/packages/hsoft/yii2-translate-manager
+[link-downloads]: https://packagist.org/packages/hsoft/yii2-translate-manager

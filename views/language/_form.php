@@ -1,15 +1,15 @@
 <?php
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.3
  */
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use lajax\translatemanager\models\Language;
+use hsoft\translatemanager\models\Language;
 
 /* @var $this yii\web\View */
-/* @var $model lajax\translatemanager\models\Language */
+/* @var $model hsoft\translatemanager\models\Language */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

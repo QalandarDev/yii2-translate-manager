@@ -1,15 +1,15 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use Yii;
 use yii\web\Response;
-use lajax\translatemanager\models\LanguageSource;
+use hsoft\translatemanager\models\LanguageSource;
 
 /**
  * Deletes an existing LanguageSource model.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.4
  */

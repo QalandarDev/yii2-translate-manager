@@ -1,16 +1,16 @@
 <?php
 
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
 
-namespace lajax\translatemanager\models\searches;
+namespace hsoft\translatemanager\models\searches;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use lajax\translatemanager\models\Language;
+use hsoft\translatemanager\models\Language;
 
 /**
  * LanguageSearch represents the model behind the search form about `common\models\Language`.

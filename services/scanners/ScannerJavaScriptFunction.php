@@ -1,23 +1,23 @@
 <?php
 
-namespace lajax\translatemanager\services\scanners;
+namespace hsoft\translatemanager\services\scanners;
 
 use yii\helpers\Console;
-use lajax\translatemanager\services\Scanner;
+use hsoft\translatemanager\services\Scanner;
 
 /**
  * Class for processing JavaScript files.
  * Language elements detected in JavaScript files:
- * "lajax.t" functions
+ * "hsoft.t" functions
  *
  * ~~~
- * lajax.t('language element);
- * lajax.t('language element {replace}', {replace:'String'});
- * lajax.t("language element");
- * lajax.t("language element {replace}", {replace:'String'});
+ * hsoft.t('language element);
+ * hsoft.t('language element {replace}', {replace:'String'});
+ * hsoft.t("language element");
+ * hsoft.t("language element {replace}", {replace:'String'});
  * ~~~
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

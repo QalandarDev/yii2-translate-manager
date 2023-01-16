@@ -1,6 +1,6 @@
 <?php
 
-namespace lajax\translatemanager;
+namespace hsoft\translatemanager;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -17,7 +17,7 @@ use yii\web\Response;
  * ~~~
  * 'modules' => [
  *     'translatemanager' => [
- *         'class' => 'lajax\translatemanager\Module',
+ *         'class' => 'hsoft\translatemanager\Module',
  *     ],
  * ],
  * ~~~
@@ -27,7 +27,7 @@ use yii\web\Response;
  * ~~~
  * 'modules' => [
  *     'translatemanager' => [
- *         'class' => 'lajax\translatemanager\Module',
+ *         'class' => 'hsoft\translatemanager\Module',
  *         'root' => '@app',               // The root directory of the project scan.
  *         'layout' => 'language',         // Name of the used layout. If using own layout use 'null'.
  *         'allowedIPs' => ['127.0.0.1'],  // IP addresses from which the translation interface is accessible.
@@ -35,7 +35,7 @@ use yii\web\Response;
  *         'tmpDir' => '@runtime',         // Writable directory for the client-side temporary language files.
  *                                         // IMPORTANT: must be identical for all applications (the AssetsManager serves the JavaScript files containing language elements from this directory).
  *         'phpTranslators' => ['::t'],    // list of the php function for translating messages.
- *         'jsTranslators' => ['lajax.t'], // list of the js function for translating messages.
+ *         'jsTranslators' => ['hsoft.t'], // list of the js function for translating messages.
  *         'patterns' => ['*.js', '*.php'],// list of file extensions that contain language elements.
  *         'ignoredCategories' => ['yii'], // these categories won’t be included in the language database.
  *         'ignoredItems' => ['config'],   // these files will not be processed.
@@ -83,7 +83,7 @@ use yii\web\Response;
  * ~~~
  *
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
@@ -97,7 +97,7 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'lajax\translatemanager\controllers';
+    public $controllerNamespace = 'hsoft\translatemanager\controllers';
 
     /**
      * @inheritdoc
@@ -214,11 +214,11 @@ class Module extends \yii\base\Module
     public $patternArrayRecursive = '#(?P<category>)(\[|\(|>|,|)\s*(?P<text>\'.*?(?<!\\\\)\'|".*?(?<!\\\\)"?)\s*(,|$)#s';
 
     /**
-     * @var string Regular expression to detect JavaScript lajax.t functions.
+     * @var string Regular expression to detect JavaScript hsoft.t functions.
      *
      * @deprecated since version 1.2.7
      */
-    public $patternJs = '#lajax\.t\s*\(\s*(?P<text>\'.*?(?<!\\\\)\'|".*?(?<!\\\\)"?)\s*[,\)]#s';
+    public $patternJs = '#hsoft\.t\s*\(\s*(?P<text>\'.*?(?<!\\\\)\'|".*?(?<!\\\\)"?)\s*[,\)]#s';
 
     /**
      * @var array List of the PHP function for translating messages.
@@ -228,7 +228,7 @@ class Module extends \yii\base\Module
     /**
      * @var array List of the JavaScript function for translating messages.
      */
-    public $jsTranslators = ['lajax.t'];
+    public $jsTranslators = ['hsoft.t'];
 
     /**
      * @var string PHP Regular expression to match arrays containing language elements to translate.

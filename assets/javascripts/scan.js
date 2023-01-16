@@ -1,6 +1,6 @@
 /** 
  * Created on : 2014.08.24., 5:26:26
- * Author     : Lajos Molnar <lajax.m@gmail.com>
+ * Author     : Lajos Molnar <hsoft.m@gmail.com>
  * since 1.4
  */
 
@@ -20,12 +20,12 @@ var scan = {
             this.toggleChecked();
         }, this));
         $('body').on('click', 'button#delete-selected', $.proxy(function () {
-            if (window.confirm(lajax.t('Are you sure you want to delete these items?'))) {
+            if (window.confirm(hsoft.t('Are you sure you want to delete these items?'))) {
                 this.deleteSelected();
             }
         }, this));
         $('body').on('click', 'a.delete-item', $.proxy(function (event) {
-            if (window.confirm(lajax.t('Are you sure you want to delete this item?'))) {
+            if (window.confirm(hsoft.t('Are you sure you want to delete this item?'))) {
                 this.deleteItem($(event.currentTarget));
             }
             return false;

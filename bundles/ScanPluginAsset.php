@@ -1,13 +1,13 @@
 <?php
 
-namespace lajax\translatemanager\bundles;
+namespace hsoft\translatemanager\bundles;
 
 use yii\web\AssetBundle;
 
 /**
  * Contains javascript files necessary for message scan on the backend.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.4
  */
@@ -16,7 +16,7 @@ class ScanPluginAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@lajax/translatemanager/assets';
+    public $sourcePath = '@hsoft/translatemanager/assets';
 
     /**
      * @inheritdoc
@@ -30,6 +30,6 @@ class ScanPluginAsset extends AssetBundle
      */
     public $depends = [
         'yii\web\JqueryAsset',
-        'lajax\translatemanager\bundles\TranslationPluginAsset',
+        'hsoft\translatemanager\bundles\TranslationPluginAsset',
     ];
 }

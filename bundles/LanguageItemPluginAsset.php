@@ -1,13 +1,13 @@
 <?php
 
-namespace lajax\translatemanager\bundles;
+namespace hsoft\translatemanager\bundles;
 
 use yii\web\AssetBundle;
 
 /**
  * Contains the translated javascript messages for the current language.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
@@ -16,7 +16,7 @@ class LanguageItemPluginAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@lajax/translatemanager/assets';
+    public $sourcePath = '@hsoft/translatemanager/assets';
 
     /**
      * @inheritdoc

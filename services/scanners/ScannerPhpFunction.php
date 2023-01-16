@@ -1,6 +1,6 @@
 <?php
 
-namespace lajax\translatemanager\services\scanners;
+namespace hsoft\translatemanager\services\scanners;
 
 use yii\helpers\Console;
 
@@ -17,7 +17,7 @@ use yii\helpers\Console;
  * ::t('category of language element', "language element {replace}", ['replace' => 'String']);
  * ~~~
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

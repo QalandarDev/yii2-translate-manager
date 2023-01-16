@@ -1,22 +1,22 @@
 <?php
 
-namespace lajax\translatemanager\services\scanners;
+namespace hsoft\translatemanager\services\scanners;
 
 use Yii;
 use yii\helpers\Console;
 use yii\helpers\FileHelper;
 use yii\base\InvalidConfigException;
-use lajax\translatemanager\services\Scanner;
+use hsoft\translatemanager\services\Scanner;
 
 /**
  * Class for processing PHP and JavaScript files.
  * Language elements detected in JavaScript files:
  *
  * ~~~
- * lajax.t('language element);
- * lajax.t('language element {replace}', {replace:'String'});
- * lajax.t("language element");
- * lajax.t("language element {replace}", {replace:'String'});
+ * hsoft.t('language element);
+ * hsoft.t('language element {replace}', {replace:'String'});
+ * hsoft.t("language element");
+ * hsoft.t("language element {replace}", {replace:'String'});
  * ~~~
  *
  * Language elements detected in PHP files:
@@ -49,16 +49,16 @@ use lajax\translatemanager\services\Scanner;
  * Translation to site language:
  *
  * ~~~
- * $genders = \lajax\translatemanager\helpers\Language::a($this->_GENDERS);
+ * $genders = \hsoft\translatemanager\helpers\Language::a($this->_GENDERS);
  * ~~~
  *
  * Translating to the language of your coice:
  *
  * ~~~
- * $statuses = \lajax\translatemanager\helpers\Language::a($this->_STATUSES, [], 'de-DE');
+ * $statuses = \hsoft\translatemanager\helpers\Language::a($this->_STATUSES, [], 'de-DE');
  * ~~~
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.1
  */
@@ -75,7 +75,7 @@ abstract class ScannerFile extends \yii\console\controllers\MessageController
     public $scanner;
 
     /**
-     * @var \lajax\translatemanager\Module TranslateManager Module
+     * @var \hsoft\translatemanager\Module TranslateManager Module
      */
     public $module;
 

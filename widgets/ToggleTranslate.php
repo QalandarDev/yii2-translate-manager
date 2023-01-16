@@ -1,10 +1,10 @@
 <?php
 
-namespace lajax\translatemanager\widgets;
+namespace hsoft\translatemanager\widgets;
 
 use Yii;
 use yii\base\Widget;
-use lajax\translatemanager\Module;
+use hsoft\translatemanager\Module;
 
 /**
  * Widget that displays button for switching to translating mode.
@@ -12,35 +12,35 @@ use lajax\translatemanager\Module;
  * Simple example:
  *
  * ~~~
- * \lajax\translatemanager\widgets\ToggleTranslate::widget();
+ * \hsoft\translatemanager\widgets\ToggleTranslate::widget();
  * ~~~
  *
  * Example for changing position:
  *
  * ~~~
- * \lajax\translatemanager\widgets\ToggleTranslate::widget([
- *  'position' => \lajax\translatemanager\widgets\ToggleTranslate::POSITION_TOP_RIGHT,
+ * \hsoft\translatemanager\widgets\ToggleTranslate::widget([
+ *  'position' => \hsoft\translatemanager\widgets\ToggleTranslate::POSITION_TOP_RIGHT,
  * ]);
  * ~~~
  *
  * Example for changing skin:
  *
  * ~~~
- * \lajax\translatemanager\widgets\ToggleTranslate::widget([
- *  'frontendTranslationAsset' => 'lajax\translatemanager\bundles\FrontendTranslationAsset',
+ * \hsoft\translatemanager\widgets\ToggleTranslate::widget([
+ *  'frontendTranslationAsset' => 'hsoft\translatemanager\bundles\FrontendTranslationAsset',
  * ]);
  * ~~~
  *
  * Example for changing template and skin:
  *
  * ~~~
- * \lajax\translatemanager\widgets\ToggleTranslate::widget([
+ * \hsoft\translatemanager\widgets\ToggleTranslate::widget([
  *  'template' => '<a href="javascript:void(0);" id="toggle-translate" class="{position}" data-language="{language}" data-url="{url}"><i></i> {text}</a><div id="translate-manager-div"></div>',
- *  'frontendTranslationAsset' => 'lajax\translatemanager\bundles\FrontendTranslationAsset',
+ *  'frontendTranslationAsset' => 'hsoft\translatemanager\bundles\FrontendTranslationAsset',
  * ]);
  * ~~~
  *
- * @author Lajos Molnar <lajax.m@gmail.com>
+ * @author Lajos Molnar <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
@@ -87,14 +87,14 @@ class ToggleTranslate extends Widget
      *
      * @var string added StyleSheets and their dependencies
      */
-    public $frontendTranslationAsset = 'lajax\translatemanager\bundles\FrontendTranslationAsset';
+    public $frontendTranslationAsset = 'hsoft\translatemanager\bundles\FrontendTranslationAsset';
 
     /**
      * example: http://www.yiiframework.com/doc-2.0/guide-structure-assets.html
      *
      * @var string added JavaScripts and their dependencies
      */
-    public $frontendTranslationPluginAsset = 'lajax\translatemanager\bundles\FrontendTranslationPluginAsset';
+    public $frontendTranslationPluginAsset = 'hsoft\translatemanager\bundles\FrontendTranslationPluginAsset';
 
     /**
      * @inheritdoc

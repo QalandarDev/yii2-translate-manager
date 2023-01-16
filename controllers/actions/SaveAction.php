@@ -1,16 +1,16 @@
 <?php
 
-namespace lajax\translatemanager\controllers\actions;
+namespace hsoft\translatemanager\controllers\actions;
 
 use Yii;
 use yii\web\Response;
-use lajax\translatemanager\services\Generator;
-use lajax\translatemanager\models\LanguageTranslate;
+use hsoft\translatemanager\services\Generator;
+use hsoft\translatemanager\models\LanguageTranslate;
 
 /**
  * Class for saving translations.
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */

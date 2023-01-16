@@ -100,17 +100,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Fixed
  - Round error in translation statistic
 
-[Unreleased]: https://github.com/lajax/yii2-translate-manager/compare/1.8.1...HEAD
-[1.8.1]: https://github.com/lajax/yii2-translate-manager/compare/1.8.0...1.8.1
-[1.8.0]: https://github.com/lajax/yii2-translate-manager/compare/1.7.3...1.8.0
-[1.7.3]: https://github.com/lajax/yii2-translate-manager/compare/1.7.2...1.7.3
-[1.7.2]: https://github.com/lajax/yii2-translate-manager/compare/1.7.1...1.7.2
-[1.7.1]: https://github.com/lajax/yii2-translate-manager/compare/1.7.0...1.7.1
-[1.7.0]: https://github.com/lajax/yii2-translate-manager/compare/1.6.0...1.7.0
-[1.6.0]: https://github.com/lajax/yii2-translate-manager/compare/1.5.4...1.6.0
-[1.5.4]: https://github.com/lajax/yii2-translate-manager/compare/1.5.3...1.5.4
-[1.5.3]: https://github.com/lajax/yii2-translate-manager/compare/1.5.2...1.5.3
-[1.5.2]: https://github.com/lajax/yii2-translate-manager/compare/1.5.1...1.5.2
-[1.5.1]: https://github.com/lajax/yii2-translate-manager/compare/1.5.0...1.5.1
-[1.5.0]: https://github.com/lajax/yii2-translate-manager/compare/1.4.9...1.5.0
+[Unreleased]: https://github.com/hsoft/yii2-translate-manager/compare/1.8.1...HEAD
+[1.8.1]: https://github.com/hsoft/yii2-translate-manager/compare/1.8.0...1.8.1
+[1.8.0]: https://github.com/hsoft/yii2-translate-manager/compare/1.7.3...1.8.0
+[1.7.3]: https://github.com/hsoft/yii2-translate-manager/compare/1.7.2...1.7.3
+[1.7.2]: https://github.com/hsoft/yii2-translate-manager/compare/1.7.1...1.7.2
+[1.7.1]: https://github.com/hsoft/yii2-translate-manager/compare/1.7.0...1.7.1
+[1.7.0]: https://github.com/hsoft/yii2-translate-manager/compare/1.6.0...1.7.0
+[1.6.0]: https://github.com/hsoft/yii2-translate-manager/compare/1.5.4...1.6.0
+[1.5.4]: https://github.com/hsoft/yii2-translate-manager/compare/1.5.3...1.5.4
+[1.5.3]: https://github.com/hsoft/yii2-translate-manager/compare/1.5.2...1.5.3
+[1.5.2]: https://github.com/hsoft/yii2-translate-manager/compare/1.5.1...1.5.2
+[1.5.1]: https://github.com/hsoft/yii2-translate-manager/compare/1.5.0...1.5.1
+[1.5.0]: https://github.com/hsoft/yii2-translate-manager/compare/1.4.9...1.5.0
 

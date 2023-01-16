@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Lajos Molnár <hsoft.m@gmail.com>
  *
  * @since 1.0
  */
 
-namespace lajax\translatemanager\models;
+namespace hsoft\translatemanager\models;
 
 use Yii;
 
@@ -156,7 +156,7 @@ class Language extends \yii\db\ActiveRecord
      */
     public static function getStatusNames()
     {
-        return \lajax\translatemanager\helpers\Language::a(self::$_CONDITIONS);
+        return \hsoft\translatemanager\helpers\Language::a(self::$_CONDITIONS);
     }
 
     /**
